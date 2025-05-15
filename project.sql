@@ -50,18 +50,6 @@ CREATE TABLE employee (
     role CHAR(50),
     phone INT(15)
 );
-INSERT INTO menuitem (itemID, description, ItemName, Price, OrderKind) VALUES
-(1, 'Large pizza with tomato sauce and mozzarella cheese', 'Margherita Pizza', 45, 'Food'),
-(2, 'Beef burger with cheddar cheese and fresh vegetables', 'Classic Burger', 35, 'Food'),
-(3, 'Fresh garden salad with mixed greens and vinaigrette', 'House Salad', 25, 'Food'),
-(4, 'Crispy fried chicken pieces with special sauce', 'Chicken Tenders', 30, 'Food'),
-(5, 'Traditional Italian pasta with meatballs', 'Spaghetti & Meatballs', 40, 'Food'),
-(6, 'Refreshing lemon-mint drink', 'Fresh Lemonade', 10, 'Drink'),
-(7, 'Homemade chocolate cake with ice cream', 'Chocolate Lava Cake', 20, 'Dessert'),
-(8, 'Grilled salmon with lemon butter sauce', 'Grilled Salmon', 55, 'Food'),
-(9, 'Vegetable stir fry with tofu and soy sauce', 'Vegetable Stir Fry', 32, 'Food'),
-(10, 'Cold coffee with ice cream and whipped cream', 'Iced Coffee Deluxe', 15, 'Drink');
-
 INSERT INTO orders (OrderID, OrderDate, TotalAmount) VALUES
 (1001, '2023-01-15', 120),
 (1002, '2023-01-16', 85),
@@ -73,7 +61,20 @@ INSERT INTO orders (OrderID, OrderDate, TotalAmount) VALUES
 (1008, '2023-01-22', 75),
 (1009, '2023-01-23', 130),
 (1010, '2023-01-24', 45);
- 
+
+INSERT INTO customers (CustomerID, CustomerName, address, email) VALUES
+(1, 'Ahmed Hassan', '15 Tahrir St, Cairo', 'ahmed.hassan@email.com'),
+(2, 'Mona Ali', '22 Zamalek St, Cairo', 'mona.ali@email.com'),
+(3, 'Kareem Youssef', '10 Mansoura Rd, Mansoura', 'kareem.youssef@email.com'),
+(4, 'Sara Ibrahim', '33 Maadi St, Cairo', 'sara.ibrahim@email.com'),
+(5, 'Mohamed Tarek', '5 October City, Giza', 'mohamed.tarek@email.com'),
+(6, 'Nourhan Adel', '12 Nasr City, Cairo', 'nourhan.adel@email.com'),
+(7, 'Hossam ElDin', '45 Alexandria St, Alexandria', 'hossam.eldin@email.com'),
+(8, 'Laila Samir', '9 Fayoum Rd, Fayoum', 'laila.samir@email.com'),
+(9, 'Tamer Magdy', '8 Suez Canal Rd, Ismailia', 'tamer.magdy@email.com'),
+(10, 'Rana Khaled', '17 Aswan Corniche, Aswan', 'rana.khaled@email.com');
+
+
 INSERT INTO employee (ID, Name, salary, address, sex, role, phone) VALUES
 (1, 'Ahmed Ali', 5000, 'Cairo', 'Male', 'Manager', 123456789),
 (2, 'Sara Youssef', 4500, 'Giza', 'Female', 'Waitress', 123456780),
